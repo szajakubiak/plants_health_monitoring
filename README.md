@@ -16,3 +16,5 @@ The following hardware will be used:
 [libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
 
 [picamera2 documentation](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
+
+[Setting up cameras with Compute Module](https://www.raspberrypi.com/documentation/computers/compute-module.html#attaching-a-raspberry-pi-camera-module)
