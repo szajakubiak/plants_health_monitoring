@@ -11,3 +11,8 @@ The following hardware will be used:
 * Raspberry Pi NOIR Camera (1st generation)
 * IR LED
 * four RGBW LEDs
+
+## Links
+[libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
+
+[picamera2 documentation](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
