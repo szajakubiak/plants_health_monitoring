@@ -12,6 +12,8 @@ The following hardware was used:
 * IR LED
 * four RGBW LEDs
 
+Both cameras were taking images in different light conditions. Green LEDs and combinations of red and blue LEDs can be used to search for plant's leafs in the image.
+
 ## Links
 [Libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
 
