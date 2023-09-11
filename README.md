@@ -12,7 +12,7 @@ The following hardware was used:
 * IR LED
 * four RGBW LEDs
 
-Both cameras were taking images in different light conditions. Green LEDs and combinations of red and blue LEDs can be used to search for plant's leafs in the image.
+Both cameras are used to take images in different light conditions. Green LEDs and combinations of red and blue LEDs can be used to search for plant's leafs in the image. IR LED is used to plant's health assessment, which is assumed to be proportional to the amount of reflected light of this wavelength.
 
 ## Connections
 Camera modules were connected as follows:
