@@ -14,6 +14,13 @@ The following hardware was used:
 
 Both cameras were taking images in different light conditions. Green LEDs and combinations of red and blue LEDs can be used to search for plant's leafs in the image.
 
+## Connections
+Camera modules were connected as follows:
+| IO board | Camera  |
+| -------- | --------|
+| CAM0     | Regular |
+| CAM1     | NoIR    |
+
 ## Links
 [Libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
 
