@@ -7,8 +7,8 @@ To optimize the use of water and fertilizers while producing food there is a nee
 ## Methods
 The following hardware was used:
 * Raspberry Pi Compute Module 4 with dedicated IO board
-* Raspberry Pi Camera (1st generation)
-* Raspberry Pi NOIR Camera (1st generation)
+* Raspberry Pi Camera Module 2 (V2.1)
+* Raspberry Pi NOIR Camera Module 2 (V2.1)
 * IR LED
 * four RGBW LEDs
 
