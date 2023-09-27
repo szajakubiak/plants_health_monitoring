@@ -27,3 +27,7 @@ Camera modules were connected as follows:
 [Picamera2 documentation](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
 
 [Setting up cameras with Compute Module](https://www.raspberrypi.com/documentation/computers/compute-module.html#attaching-a-raspberry-pi-camera-module)
+
+[Signature Optical Cues: Emerging Technologies for Monitoring Plant Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3675540/)
+
+[Active and Passive Electro-Optical Sensors for Health Assessment in Food Crops](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7795220/)
