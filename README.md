@@ -11,6 +11,7 @@ The following hardware was used:
 * Raspberry Pi NOIR Camera Module 2 (V2.1)
 * IR LED
 * four RGBW LEDs
+* filter passing only IR light
 
 Both cameras are used to take images in different light conditions. Green LEDs and combinations of red and blue LEDs can be used to search for plant's leafs in the image. IR LED is used to plant's health assessment, which is assumed to be proportional to the amount of reflected light of this wavelength.
 
