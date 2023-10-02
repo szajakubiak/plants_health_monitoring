@@ -4,23 +4,13 @@
 ## Goals
 To optimize the use of water and fertilizers while producing food there is a need to assess plants health in real time. This can be done by analyzing images taken in different light conditions, optimially using camera capable of recording IR light. Additional visible light filter can be used to quantify amount of IR light reflected by plant's leafs.
 
-## Methods
-The following hardware was used:
-* Raspberry Pi Compute Module 4 with dedicated IO board
-* Raspberry Pi Camera Module 2 (V2.1)
-* Raspberry Pi NOIR Camera Module 2 (V2.1)
-* IR LED
+## Hardware
+### Raspberry Pi computer with a day / night camera
+* Raspberry Pi 3 Model A
+* Camera module with IR filter controlled
+* two IR LEDs
 * four RGBW LEDs
-* filter passing only IR light
-
-Both cameras are used to take images in different light conditions. Green LEDs and combinations of red and blue LEDs can be used to search for plant's leafs in the image. IR LED is used to plant's health assessment, which is assumed to be proportional to the amount of reflected light of this wavelength.
-
-## Connections
-Camera modules were connected as follows:
-| IO board | Camera  |
-| -------- | --------|
-| CAM0     | Regular |
-| CAM1     | NoIR    |
+* filter passing only IR light (wavelength from 700 nm to 1600 nm)
 
 ## Links
 [Libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
