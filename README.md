@@ -17,7 +17,9 @@ To optimize the use of water and fertilizers while producing food there is a nee
 
 [Picamera2 documentation](https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf)
 
-[Setting up cameras with Compute Module](https://www.raspberrypi.com/documentation/computers/compute-module.html#attaching-a-raspberry-pi-camera-module)
+[Using OV7670 camera in CircuitPython](https://docs.circuitpython.org/projects/ov7670/en/latest/)
+
+[Wiring camera to Raspberry Pi Pico](https://learn.adafruit.com/capturing-camera-images-with-circuitpython/raspberry-pi-pico-wiring)
 
 [Signature Optical Cues: Emerging Technologies for Monitoring Plant Health](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3675540/)
 
