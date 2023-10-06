@@ -12,6 +12,12 @@ To optimize the use of water and fertilizers while producing food there is a nee
 * four RGBW LEDs
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
 
+### Raspberry Pi Pico with a day / night camera
+* Raspberry Pi Pico W
+* OV7670 camera module
+* switchable IR filter
+* filter passing only IR light (wavelength from 700 nm to 1600 nm)
+
 ## Links
 [Libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
 
