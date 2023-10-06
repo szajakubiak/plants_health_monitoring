@@ -7,7 +7,7 @@ To optimize the use of water and fertilizers while producing food there is a nee
 ## Hardware
 ### Raspberry Pi computer with a day / night camera
 * Raspberry Pi 3 Model A
-* Camera module with IR filter controlled
+* OV5647 camera module with switchable IR filter
 * two IR LEDs
 * four RGBW LEDs
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
