@@ -37,3 +37,7 @@ Results obtained using camera observation were compared with spectrograms from [
 [Using near IR to look for photosynthesis and plant health with NDVI](https://www.richardmudhar.com/blog/2015/07/using-near-ir-to-look-for-photosynthesis-and-plant-health-with-ndvi/)
 
 [Raspberry Pi Infragram](https://publiclab.org/wiki/raspberry-pi-infragram)
+
+## TODO:
+* Connection diagram for device with Pico W
+* 3D printed stand for PySpectrometer2
