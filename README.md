@@ -18,6 +18,9 @@ To optimize the use of water and fertilizers while producing food there is a nee
 * switchable IR filter
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
 
+### PySpectrometer2
+Results obtained using camera observation were compared with spectrograms from [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2).
+
 ## Links
 [Libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
 
