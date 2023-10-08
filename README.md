@@ -21,6 +21,9 @@ To optimize the use of water and fertilizers while producing food there is a nee
 ### PySpectrometer2
 Results obtained using camera observation were compared with spectrograms from [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2).
 
+## IR filter control
+Both cameras are equipped with lens mount with switchable IR filter. OV5647 module is additionaly equipped with phtoresistors and potentiometers to automatically control IR filter and brightness of IR LEDs.
+
 ## Links
 [Libcamera documentation](https://www.raspberrypi.com/documentation/computers/camera_software.html#getting-started)
 
