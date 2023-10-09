@@ -19,7 +19,7 @@ To optimize the use of water and fertilizers while producing food there is a nee
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
 
 ### PySpectrometer2
-Results obtained using camera observation were compared with spectrograms from [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2).
+Results obtained using camera observation were compared with spectrograms recorded using [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2).
 
 ## IR filter control
 Both cameras are equipped with lens mount with switchable IR filter. OV5647 module is additionaly equipped with phtoresistors and potentiometers to automatically control IR filter and brightness of IR LEDs.
