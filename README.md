@@ -44,3 +44,6 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 ## TODO:
 * Connection diagram for device with Pico W
 * 3D printed stand for PySpectrometer2
+* Connection diagram for IR filter controller
+* 3D printed mounts for RGB LED rings for both cameras
+* 3D printed mount for IR LED for OV7670 camera module
