@@ -11,6 +11,7 @@ To optimize the use of water and fertilizers while producing food there is a nee
 * two IR LEDs
 * four RGBW LEDs
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
+OV5647 camera module and two IR LEDs were equiped with photoresistors to detect low light conditions and control IR LEDs brightness and IR filter presence. There photoresistors were removed and one of the pads was connected to the Raspberry Pi GPIO pin.
 
 ### Raspberry Pi Pico with a day / night camera
 * Raspberry Pi Pico W
