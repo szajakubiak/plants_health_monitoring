@@ -19,6 +19,12 @@ OV5647 camera module and two IR LEDs were equiped with photoresistors to detect 
 * switchable IR filter
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
 
+Connections:
+| Pico W | OV7670 |
+| ------ | ------ |
+| 3V3    | 3v3    |
+| GND    | GND    |
+
 ### PySpectrometer2
 Results obtained using camera observation were compared with spectrograms recorded using [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2).
 
