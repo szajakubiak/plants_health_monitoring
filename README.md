@@ -48,6 +48,8 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 
 [Raspberry Pi Infragram](https://publiclab.org/wiki/raspberry-pi-infragram)
 
+[Control RPi camera LED](https://forums.raspberrypi.com/viewtopic.php?t=328635#p1967852)
+
 ## TODO:
 * Connection diagram for device with Pico W
 * 3D printed stand for PySpectrometer2
