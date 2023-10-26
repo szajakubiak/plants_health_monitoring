@@ -52,6 +52,8 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 
 [gpiozero documentation](https://gpiozero.readthedocs.io/en/stable/)
 
+[Run pigpiod on boot](https://raspberrypi.stackexchange.com/questions/70568/how-to-run-pigpiod-on-boot)
+
 ## TODO:
 * Connection diagram for device with Pico W
 * 3D printed stand for PySpectrometer2
