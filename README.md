@@ -50,6 +50,8 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 
 [Control RPi camera LED](https://forums.raspberrypi.com/viewtopic.php?t=328635#p1967852)
 
+[gpiozero documentation](https://gpiozero.readthedocs.io/en/stable/)
+
 ## TODO:
 * Connection diagram for device with Pico W
 * 3D printed stand for PySpectrometer2
