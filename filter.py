@@ -9,10 +9,10 @@ pwm_gpio=17
 servo = Servo(pwm_gpio, pin_factory=factory)
 
 def on():
-    servo.min()
+    servo.value = -0.95
 
 def off():
-    servo.max()
+    servo.value = 0.8
 
 if __name__ == "__main__":
     while True:
