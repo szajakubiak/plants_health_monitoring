@@ -54,6 +54,8 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 
 [Run pigpiod on boot](https://raspberrypi.stackexchange.com/questions/70568/how-to-run-pigpiod-on-boot)
 
+[Waveshare IR-CUT camera docs](https://www.waveshare.com/wiki/RPi_IR-CUT_Camera)
+
 ## TODO:
 * Connection diagram for device with Pico W
 * 3D printed stand for PySpectrometer2
