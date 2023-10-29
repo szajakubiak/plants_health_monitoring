@@ -11,11 +11,14 @@ factory = PiGPIOFactory()
 
 servo = Servo(SERVO_PIN, pin_factory=factory)
 
+
 def on():
     servo.value = FILTER_ON_POS
 
+
 def off():
     servo.value = FILTER_OFF_POS
+
 
 if __name__ == "__main__":
     while True:
