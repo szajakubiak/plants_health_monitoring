@@ -4,9 +4,9 @@ from time import sleep
 
 factory = PiGPIOFactory()
 
-pwm_gpio=17
+servo_gpio=17
 
-servo = Servo(pwm_gpio, pin_factory=factory)
+servo = Servo(servo_gpio, pin_factory=factory)
 
 def on():
     servo.value = -0.95
