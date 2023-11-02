@@ -17,7 +17,7 @@ class Filter_visible:
     def __init__(self, pin):
         self.pin = pin
         self.servo = Servo(self.pin, pin_factory=factory)
-    
+
     def on(self):
         self.servo.value = FILTER_ON_POS
 
@@ -29,7 +29,7 @@ class Filter_infrared:
     def __init__(self, pin):
         self.pin = pin
         self.output = DigitalOutputDevice(self.pin, pin_factory=factory)
-    
+
     def on(self):
         self.output.off()
 
@@ -41,7 +41,7 @@ class Infrared_led:
     def __init__(self, pin):
         self.pin = pin
         self.output = DigitalOutputDevice(self.pin, pin_factory=factory)
-    
+
     def on(self):
         self.output.on()
 
@@ -58,14 +58,14 @@ if __name__ == "__main__":
     ir_led.off()
     while True:
         vis_fil.on()
-        #print("Visible light filter on")
+        # print("Visible light filter on")
         sleep(2)
         vis_fil.off()
-        #print("Visible light filter off")
+        # print("Visible light filter off")
         sleep(2)
         ir_fil.on()
-        #print("Infrared light filter on")
+        # print("Infrared light filter on")
         sleep(2)
         ir_fil.off()
-        #print("Infrared light filter off")
+        # print("Infrared light filter off")
         sleep(2)
