@@ -15,7 +15,7 @@ factory = PiGPIOFactory()
 class Filter_visible:
     def __init__(self, pin):
         self.pin = pin
-        self.servo = Servo(SERVO_PIN, pin_factory=factory)
+        self.servo = Servo(self.pin, pin_factory=factory)
     
     def on(self):
         self.servo.value = FILTER_ON_POS
