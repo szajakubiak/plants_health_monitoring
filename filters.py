@@ -9,22 +9,25 @@ SERVO_PIN = 17
 
 factory = PiGPIOFactory()
 
-servo = Servo(SERVO_PIN, pin_factory=factory)
 
+class Filter_visible:
+    def __init__(self, pin):
+        self.pin = pin
+        self.servo = Servo(SERVO_PIN, pin_factory=factory)
+    
+    def on(self):
+        self.servo.value = FILTER_ON_POS
 
-def on():
-    servo.value = FILTER_ON_POS
-
-
-def off():
-    servo.value = FILTER_OFF_POS
+    def off(self):
+        self.servo.value = FILTER_OFF_POS
 
 
 if __name__ == "__main__":
+    vis_fil = Filter_visible(SERVO_PIN)
     while True:
-        on()
-        print("filter on")
+        vis_fil.on()
+        print("Visible light filter on")
         sleep(2)
-        off()
-        print("filter off")
+        vis_fil.off()
+        print("Visible light filter off")
         sleep(2)
