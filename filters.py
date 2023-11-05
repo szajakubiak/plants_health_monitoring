@@ -1,5 +1,5 @@
 from gpiozero.pins.pigpio import PiGPIOFactory
-from gpiozero import Device, DigitalOutputDevice, Servo
+from gpiozero import DigitalOutputDevice, Servo
 from time import sleep
 
 # Servo positions for visible light filter states
