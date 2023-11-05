@@ -7,11 +7,31 @@ To optimize the use of water and fertilizers while producing food there is a nee
 ## Hardware
 ### Raspberry Pi computer with a day / night camera
 * Raspberry Pi 3 Model A or Raspberry Pi Zero 2 W
-* OV5647 camera module with switchable IR filter
+* OV5647 camera module with switchable IR filter (often referred as IR CUT)
 * two IR LEDs
-* four RGBW LEDs
+* strip of eight RGB LEDs
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
-OV5647 camera module and two IR LEDs were equiped with photoresistors to detect low light conditions and control IR LEDs brightness and IR filter presence. There photoresistors were removed and one of the pads was connected to the Raspberry Pi GPIO pin.
+OV5647 camera module and two IR LEDs were equiped with photoresistors to detect low light conditions and control IR LEDs brightness and IR filter presence. These photoresistors were removed and one of the pads (marked with + sign) was connected to the Raspberry Pi GPIO pin.
+
+#### Create Python virtual environment
+``` bash
+sudo apt install python3-pip python3-venv
+python -m venv cam
+```
+
+#### Support for controlling GPIOs
+``` bash
+~/cam/bin/pip install gpiozero pigpio 
+```
+
+#### Support for NeoPixels
+Install the following libraries:
+
+``` bash
+~/cam/bin/pip install rpi_ws281x adafruit-circuitpython-neopixel adafruit-blinka
+```
+
+Documentation for NeoPixel library is [here](https://docs.circuitpython.org/projects/neopixel/en/latest/).
 
 ### Raspberry Pi Pico with a day / night camera
 * Raspberry Pi Pico W
