@@ -33,6 +33,27 @@ Install the following libraries:
 
 Documentation for NeoPixel library is [here](https://docs.circuitpython.org/projects/neopixel/en/latest/).
 
+### Additional settings
+By default IR LEDs are turned on when device is powered. There is a script to turn off all LEDs, which can be scheduled to run on boot using cron:
+
+``` bash
+crontab -e
+```
+
+If you run this command for the first time you will be asked about which text editor to use. If you don't have your favorite editor on the list, probably you want to stick with nano, so select option 1. Then at the end of the file add this line:
+
+``` bash
+@reboot sudo ~/cam/bin/python ~/leds_off.py
+```
+
+Press Ctrl+o followed by Enter to save changes and Ctrl+c followed by Enter to quit.
+
+If you want to start the camera with filters set to normal mode (infrared filter turned on, visible light filter turned off) you can add this line to the cron as well:
+
+```
+@reboot sudo ~/cam/bin/python ~/filters_normal.py
+```
+
 ### Raspberry Pi Pico with a day / night camera
 * Raspberry Pi Pico W
 * OV7670 camera module
