@@ -1,13 +1,8 @@
-from leds import Infrared_led, Rgb_led
+import leds
 
 
-IRLED_PIN = 22
-NEOPIXEL_PIN = board.D18
-NEOPIXEL_COUNT = 8
-
-
-ir_led = Infrared_led(IRLED_PIN)
-rgb_led = Rgb_led(NEOPIXEL_PIN, NEOPIXEL_COUNT)
+ir_led = leds.Infrared_led(leds.IRLED_PIN)
+rgb_led = leds.Rgb_led(leds.NEOPIXEL_PIN, leds.NEOPIXEL_COUNT)
 
 
 ir_led.off()
