@@ -31,7 +31,7 @@ class Rgb_led:
         self.red = 0
         self.green = 0
         self.blue = 0
-    
+
     def set(self):
         for led in range(self.length):
             self.strip[led] = (self.red, self.green, self.blue)
@@ -47,7 +47,7 @@ class Rgb_led:
         self.green = 0
         self.blue = 0
         self.set()
-    
+
     def red_on(self):
         self.red = 255
         self.set()
@@ -55,7 +55,7 @@ class Rgb_led:
     def red_off(self):
         self.red = 0
         self.set()
-    
+
     def green_on(self):
         self.green = 255
         self.set()
@@ -63,7 +63,7 @@ class Rgb_led:
     def green_off(self):
         self.green = 0
         self.set()
-    
+
     def blue_on(self):
         self.blue = 255
         self.set()
