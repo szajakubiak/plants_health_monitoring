@@ -66,6 +66,7 @@ sleep(1)
 picam2.capture_file(filename + ".jpg")
 
 
+sleep(1)
 led_rgb.off()
 led_ir.off()
 fil_ir.on()
