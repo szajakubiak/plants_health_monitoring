@@ -53,15 +53,14 @@ sleep(1)
 
 
 timestamp = get_timestamp()
-picam2 = Picamera2()
-camera_config = picam2.create_preview_configuration()
-picam2.configure(camera_config)
-picam2.start_preview(Preview.DRM)
-picam2.start()
-sleep(2)
 filename = timestamp
 if len(lig) > 0:
     filename += "_" + lig
 if len(fil) > 0:
     filename += "_" + fil
+
+
+picam2 = Picamera2()
+picam2.start()
+sleep(1)
 picam2.capture_file(filename + ".jpg")
