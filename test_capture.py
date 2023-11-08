@@ -64,3 +64,9 @@ picam2 = Picamera2()
 picam2.start()
 sleep(1)
 picam2.capture_file(filename + ".jpg")
+
+
+led_rgb.off()
+led_ir.off()
+fil_ir.on()
+fil_vis.off()
