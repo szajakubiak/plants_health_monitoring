@@ -16,7 +16,7 @@ OV5647 camera module and two IR LEDs were equiped with photoresistors to detect 
 #### Create Python virtual environment
 ``` bash
 sudo apt install python3-pip python3-venv
-python -m venv cam
+python -m venv cam --system-site-packages
 ```
 
 #### Support for controlling GPIOs
