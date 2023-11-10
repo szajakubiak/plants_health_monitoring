@@ -67,7 +67,18 @@ Connections:
 | GND    | GND    |
 
 ### PySpectrometer2
-Results obtained using camera observation were compared with spectrograms recorded using [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2).
+Results obtained using camera observation were compared with spectrograms recorded using [PySpectrometer2](https://github.com/leswright1977/PySpectrometer2). To build it I used Raspberry Pi Zero 2 W flashed with 32-bit, Debian Bookworm based Raspberry Pi OS with desktop, but without recommended apps. I also used [Pimoroni HyperPixel 4.0](https://shop.pimoroni.com/products/hyperpixel-4?variant=12569539706963) screen, as I already had it. To turn on the screen the following line needs to be added at the end of the /boot/config.txt:
+
+``` bash
+dtoverlay=vc4-kms-dpi-hyperpixel4
+```
+
+By default screen is rotated (in vertical mode). In theory it's possible to set correct rotation by a parameter added to the above line, but in my case it didn't work. So instead I booted to the desktop and used Sreen Configuration tools to set the correct orientation. Next, you need to install OpenCV:
+
+``` bash
+sudo apt install python3-opencv
+
+```
 
 ## IR filter control
 Both cameras are equipped with lens mount with switchable IR filter. OV5647 module is additionaly equipped with phtoresistors and potentiometers to automatically control IR filter and brightness of IR LEDs.
