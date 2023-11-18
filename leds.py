@@ -73,6 +73,67 @@ class Rgb_led:
         self.set()
 
 
+class Rgbw_led:
+    def __init__(self, pin, length):
+        self.strip = neopixel.NeoPixel(pin, length)
+        self.length = length
+        self.red = 0
+        self.green = 0
+        self.blue = 0
+        self.white = 0
+
+    def set(self):
+        for led in range(self.length):
+            self.strip[led] = (self.red, self.green, self.blue, self.white)
+
+    def on(self):
+        self.red = 255
+        self.green = 255
+        self.blue = 255
+        self.white = 255
+        self.set()
+
+    def off(self):
+        self.red = 0
+        self.green = 0
+        self.blue = 0
+        self.white = 0
+        self.set()
+
+    def red_on(self):
+        self.red = 255
+        self.set()
+
+    def red_off(self):
+        self.red = 0
+        self.set()
+
+    def green_on(self):
+        self.green = 255
+        self.set()
+
+    def green_off(self):
+        self.green = 0
+        self.set()
+
+    def blue_on(self):
+        self.blue = 255
+        self.set()
+
+    def blue_off(self):
+        self.blue = 0
+        self.set()
+    
+    def white_on(self):
+        self.white = 255
+        self.set()
+
+    def white_off(self):
+        self.white = 0
+        self.set()
+
+
+
 if __name__ == "__main__":
     ir_led = Infrared_led(IRLED_PIN)
     rgb_led = Rgb_led(NEOPIXEL_PIN, NEOPIXEL_COUNT)
