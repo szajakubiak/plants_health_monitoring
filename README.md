@@ -9,9 +9,17 @@ To optimize the use of water and fertilizers while producing food there is a nee
 * Raspberry Pi 3 Model A or Raspberry Pi Zero 2 W
 * OV5647 camera module with switchable IR filter (often referred as IR CUT)
 * two IR LEDs
-* strip of eight RGB LEDs
+* strip of eight RGB or RGBW LEDs
 * filter passing only IR light (wavelength from 700 nm to 1600 nm)
 OV5647 camera module and two IR LEDs were equiped with photoresistors to detect low light conditions and control IR LEDs brightness and IR filter presence. These photoresistors were removed and one of the pads (marked with + sign) was connected to the Raspberry Pi GPIO pin.
+
+#### Connections
+RGB or RGBW LED strip:
+| Raspberry Pi | LED strip |
+| ------------ | --------- |
+| 3V3          | 3v3       |
+| GND          | GND       |
+| GPIO 18      | DIN       |
 
 #### Create Python virtual environment
 ``` bash
