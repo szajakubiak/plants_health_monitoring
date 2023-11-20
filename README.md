@@ -21,6 +21,18 @@ RGB or RGBW LED strip:
 | GND          | GND       |
 | GPIO 18      | DIN       |
 
+IR LEDs:
+| Raspberry Pi | IR LED          | AMS1117-3.3 |
+| ------------ | --------------- | ----------- |
+| 5V           |                 | IN          |
+|              | 3V3<sup>1</sup> | OUT         |
+| GND          | GND             | GND         |
+| GPIO 22      | + <sup>2</sup>  |             |
+
+<sup>1</sup> pad with screw hole near photoresistor
+
+<sup>2</sup> marking visible after desoldering photoresistor
+
 #### Create Python virtual environment
 ``` bash
 sudo apt install python3-pip python3-venv
