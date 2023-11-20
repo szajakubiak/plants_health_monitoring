@@ -17,7 +17,7 @@ OV5647 camera module and two IR LEDs were equiped with photoresistors to detect 
 RGB or RGBW LED strip:
 | Raspberry Pi | LED strip |
 | ------------ | --------- |
-| 3V3          | 3v3       |
+| 3V3          | 3V3       |
 | GND          | GND       |
 | GPIO 18      | DIN       |
 
