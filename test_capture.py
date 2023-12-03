@@ -21,7 +21,7 @@ def get_timestamp():
     return timestamp
 
 
-led_rgb = leds.Rgb_led(leds.NEOPIXEL_PIN, leds.NEOPIXEL_COUNT)
+led_rgb = leds.Rgbw_led(leds.NEOPIXEL_PIN, leds.NEOPIXEL_COUNT)
 led_ir = leds.Infrared_led(leds.IRLED_PIN)
 
 
@@ -37,6 +37,8 @@ if "g" in lig:
     led_rgb.green_on()
 if "b" in lig:
     led_rgb.blue_on()
+if "w" in lig:
+    led_rgb.white_on()
 if "i" in lig:
     led_ir.on()
 
