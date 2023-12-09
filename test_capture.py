@@ -64,10 +64,9 @@ if len(fil) > 0:
 
 picam2 = Picamera2()
 capture_config = picam2.create_still_configuration()
-picam2 = picam2.configure(capture_config)
 picam2.start(show_preview=False)
 sleep(1)
-picam2.capture_file(filename + ".jpg")
+picam2.switch_mode_and_capture_file(capture_config, filename + ".jpg")
 
 
 sleep(1)
