@@ -123,7 +123,7 @@ class Rgbw_led:
     def blue_off(self):
         self.blue = 0
         self.set()
-    
+
     def white_on(self):
         self.white = 255
         self.set()
