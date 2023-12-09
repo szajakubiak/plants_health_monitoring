@@ -75,7 +75,7 @@ class Rgb_led:
 
 class Rgbw_led:
     def __init__(self, pin, length):
-        self.strip = neopixel.NeoPixel(pin, length, pixel_order=neopixel.RGB)
+        self.strip = neopixel.NeoPixel(pin, length, pixel_order=neopixel.GRBW)
         self.length = length
         self.red = 0
         self.green = 0
