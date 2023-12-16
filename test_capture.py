@@ -21,8 +21,8 @@ def get_timestamp():
     return timestamp
 
 
-led_rgb = leds.Rgbw_led(leds.NEOPIXEL_PIN, leds.NEOPIXEL_COUNT)
-led_ir = leds.Infrared_led(leds.IRLED_PIN)
+led_rgb = leds.Rgbw_led()
+led_ir = leds.Infrared_led()
 
 
 fil_ir = filters.Filter_infrared(filters.IRCUT_PIN)

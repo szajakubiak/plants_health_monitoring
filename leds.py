@@ -4,11 +4,6 @@ import board
 import neopixel
 
 
-IRLED_PIN = 22
-NEOPIXEL_PIN = board.D18
-NEOPIXEL_COUNT = 8
-
-
 factory = PiGPIOFactory()
 
 
