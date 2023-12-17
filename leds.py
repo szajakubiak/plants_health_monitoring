@@ -133,7 +133,7 @@ if __name__ == "__main__":
     from time import sleep
 
     ir_led = Infrared_led()
-    rgb_led = Rgb_led()
+    rgb_led = Rgbw_led()
     ir_led.off()
     rgb_led.off()
     while True:
