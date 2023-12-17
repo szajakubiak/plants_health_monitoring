@@ -130,7 +130,6 @@ class Rgbw_led:
         self.set()
 
 
-
 if __name__ == "__main__":
     from time import sleep
 

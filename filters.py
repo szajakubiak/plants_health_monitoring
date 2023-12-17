@@ -36,7 +36,7 @@ class Filter_infrared:
 
 if __name__ == "__main__":
     from time import sleep
-    
+
     vis_fil = Filter_visible()
     ir_fil = Filter_infrared()
     vis_fil.off()
