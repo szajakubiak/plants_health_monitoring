@@ -1,6 +1,6 @@
 from gpiozero.pins.pigpio import PiGPIOFactory
 from gpiozero import DigitalOutputDevice, Servo
-from time import sleep
+
 
 # Servo positions for visible light filter states
 FILTER_ON_POS = -0.95
@@ -35,6 +35,8 @@ class Filter_infrared:
 
 
 if __name__ == "__main__":
+    from time import sleep
+    
     vis_fil = Filter_visible()
     ir_fil = Filter_infrared()
     vis_fil.off()
