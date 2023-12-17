@@ -5,15 +5,13 @@ from time import sleep
 # Servo positions for visible light filter states
 FILTER_ON_POS = -0.95
 FILTER_OFF_POS = 0.8
-SERVO_PIN = 17
-IRCUT_PIN = 27
 
 
 factory = PiGPIOFactory()
 
 
 class Filter_visible:
-    def __init__(self, pin):
+    def __init__(self, pin=17):
         self.pin = pin
         self.servo = Servo(self.pin, pin_factory=factory)
 
@@ -25,7 +23,7 @@ class Filter_visible:
 
 
 class Filter_infrared:
-    def __init__(self, pin):
+    def __init__(self, pin=27):
         self.pin = pin
         self.output = DigitalOutputDevice(self.pin, pin_factory=factory)
 
@@ -37,8 +35,8 @@ class Filter_infrared:
 
 
 if __name__ == "__main__":
-    vis_fil = Filter_visible(SERVO_PIN)
-    ir_fil = Filter_infrared(IRCUT_PIN)
+    vis_fil = Filter_visible()
+    ir_fil = Filter_infrared()
     vis_fil.off()
     ir_fil.off()
     while True:
