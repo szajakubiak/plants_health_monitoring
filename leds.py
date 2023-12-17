@@ -8,7 +8,7 @@ factory = PiGPIOFactory()
 
 
 class Infrared_led:
-    def __init__(self, pin=board.D22):
+    def __init__(self, pin=22):
         self.pin = pin
         self.output = DigitalOutputDevice(self.pin, pin_factory=factory)
 
@@ -20,8 +20,9 @@ class Infrared_led:
 
 
 class Rgb_led:
-    def __init__(self, pin=board.D18, length=8):
-        self.strip = neopixel.NeoPixel(pin, length, pixel_order=neopixel.RGB)
+    def __init__(self, pin=18, length=8):
+        self.pin = getattr(board, "D" + str((pin)))
+        self.strip = neopixel.NeoPixel(self.pin, length, pixel_order=neopixel.RGB)
         self.length = length
         self.red = 0
         self.green = 0
@@ -69,8 +70,9 @@ class Rgb_led:
 
 
 class Rgbw_led:
-    def __init__(self, pin=board.D18, length=8):
-        self.strip = neopixel.NeoPixel(pin, length, pixel_order=neopixel.GRBW)
+    def __init__(self, pin=18, length=8):
+        self.pin = getattr(board, "D" + str((pin)))
+        self.strip = neopixel.NeoPixel(self.pin, length, pixel_order=neopixel.GRBW)
         self.length = length
         self.red = 0
         self.green = 0
