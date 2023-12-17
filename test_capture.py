@@ -25,8 +25,8 @@ led_rgb = leds.Rgbw_led()
 led_ir = leds.Infrared_led()
 
 
-fil_ir = filters.Filter_infrared(filters.IRCUT_PIN)
-fil_vis = filters.Filter_visible(filters.SERVO_PIN)
+fil_ir = filters.Filter_infrared()
+fil_vis = filters.Filter_visible()
 
 
 led_rgb.off()
