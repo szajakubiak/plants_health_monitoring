@@ -130,6 +130,8 @@ class Rgbw_led:
 
 
 if __name__ == "__main__":
+    from time import sleep
+
     ir_led = Infrared_led()
     rgb_led = Rgb_led()
     ir_led.off()
