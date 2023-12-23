@@ -129,9 +129,7 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 [Waveshare IR-CUT camera docs](https://www.waveshare.com/wiki/RPi_IR-CUT_Camera)
 
 ## TODO:
-* use default connections for filters
 * Connection diagram for device with Pico W
 * 3D printed stand for PySpectrometer2
 * Connection diagram for IR filter controller
-* 3D printed mounts for RGB LED rings for both cameras
-* 3D printed mount for IR LED for OV7670 camera module
+* Add links to 3D printed parts
