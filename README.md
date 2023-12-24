@@ -2,7 +2,9 @@
 Plants health assessment using image analysis methods
 
 ## Goals
-To optimize the use of water and fertilizers while producing food there is a need to assess plants health in real time. This can be done by analyzing images taken in different light conditions, optimially using camera capable of recording IR light. Additional visible light filter can be used to quantify amount of IR light reflected by plant's leafs.
+To optimize the use of water and fertilizers while producing food there is a need to assess plants health in real time. This can be done by analyzing images taken in different light conditions, optimially using camera capable of recording IR light. Additional visible light filter can be used to quantify the amount of IR light reflected by the plant's leafs. This work has the following goals:
+* verify hypothesis that described method can be used to assess plants health in real world conditions
+* define minimal requirements for final solution
 
 ## Hardware
 ### Raspberry Pi computer with a day / night camera
