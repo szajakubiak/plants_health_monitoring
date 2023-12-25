@@ -102,6 +102,9 @@ sudo apt install python3-opencv
 
 ```
 
+### Soil moisture sensor
+To measure the soil moisture during the test I used two types of sensors coonnected to the BLE-capable microcontroller ESP32-C3. The most popular types of soil moisture sensors are resistive and capacitive ones. They have their [pros and cons](https://www.seeedstudio.com/blog/2020/01/10/what-is-soil-moisture-sensor-and-simple-arduino-tutorial-to-get-started/), so I decided to use both of them.
+
 ## IR filter control
 Both cameras are equipped with lens mount with switchable IR filter. OV5647 module is additionaly equipped with phtoresistors and potentiometers to automatically control IR filter and brightness of IR LEDs.
 
