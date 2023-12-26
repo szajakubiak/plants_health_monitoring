@@ -135,6 +135,8 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 
 ## TODO:
 * Connection diagram for device with Pico W
+* Connection diagram for soil moisture sensors
 * 3D printed stand for PySpectrometer2
 * Connection diagram for IR filter controller
 * Add links to 3D printed parts
+* Add info about turn table for plants photography
