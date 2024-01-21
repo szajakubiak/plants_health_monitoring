@@ -1,5 +1,5 @@
 import argparse
-from picamera2 import Picamera2, Preview
+from picamera2 import Picamera2
 from time import sleep
 from datetime import datetime
 import leds
