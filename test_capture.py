@@ -10,9 +10,11 @@ from time import sleep
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", "--lights", help="lights to use", type=str, default="")
 parser.add_argument("-f", "--filters", help="filters to use", type=str, default="")
+parser.add_argument("-e", "--extension", help="output file extension", type=str, default="jpg")
 args = parser.parse_args()
 lig = args.lights
 fil = args.filters
+ext = args.extension
 
 
 def get_timestamp():
@@ -66,7 +68,7 @@ picam2 = Picamera2()
 capture_config = picam2.create_still_configuration()
 picam2.start(show_preview=False)
 sleep(1)
-picam2.switch_mode_and_capture_file(capture_config, filename + ".jpg")
+picam2.switch_mode_and_capture_file(capture_config, filename + "." + ext)
 
 
 sleep(1)
