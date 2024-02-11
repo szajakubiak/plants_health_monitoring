@@ -18,19 +18,23 @@ ext = args.extension
 
 
 def get_timestamp():
+    """Return the current timestamp as a string."""
     now = datetime.now()
     timestamp = now.strftime("%Y-%m-%dT%H-%M-%S")
     return timestamp
 
 
+# Create LED objects
 led_rgb = leds.Rgbw_led()
 led_ir = leds.Infrared_led()
 
 
+# Create filter objects
 fil_ir = filters.Filter_infrared()
 fil_vis = filters.Filter_visible()
 
 
+# Set LEDs according to passed parameters
 led_rgb.off()
 led_ir.off()
 if "r" in lig:
@@ -45,6 +49,7 @@ if "i" in lig:
     led_ir.on()
 
 
+# Set filters according to passed parameters
 fil_ir.off()
 fil_vis.off()
 if "i" in fil:
@@ -56,6 +61,7 @@ if "v" in fil:
 sleep(1)
 
 
+# Create the name of the output file
 timestamp = get_timestamp()
 filename = timestamp
 if len(lig) > 0:
@@ -64,6 +70,7 @@ if len(fil) > 0:
     filename += "_" + fil
 
 
+# Capture image
 picam2 = Picamera2()
 capture_config = picam2.create_still_configuration()
 picam2.start(show_preview=False)
@@ -71,6 +78,7 @@ sleep(1)
 picam2.switch_mode_and_capture_file(capture_config, filename + "." + ext)
 
 
+# Set camera to normal mode
 sleep(1)
 led_rgb.off()
 led_ir.off()
