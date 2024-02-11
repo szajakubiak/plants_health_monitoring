@@ -10,7 +10,9 @@ from time import sleep
 parser = argparse.ArgumentParser()
 parser.add_argument("-l", "--lights", help="lights to use", type=str, default="")
 parser.add_argument("-f", "--filters", help="filters to use", type=str, default="")
-parser.add_argument("-e", "--extension", help="output file extension", type=str, default="jpg")
+parser.add_argument(
+    "-e", "--extension", help="output file extension", type=str, default="jpg"
+)
 args = parser.parse_args()
 lig = args.lights
 fil = args.filters
