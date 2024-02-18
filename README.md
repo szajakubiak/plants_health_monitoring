@@ -140,3 +140,5 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 * Connection diagram for IR filter controller
 * Add links to 3D printed parts
 * Add info about turn table for plants photography
+* Add sample data for testing
+* Add Jupyter Notebook for image analysis
