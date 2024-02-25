@@ -134,6 +134,7 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 [Waveshare IR-CUT camera docs](https://www.waveshare.com/wiki/RPi_IR-CUT_Camera)
 
 ## TODO:
+* Create separate repositories for devices
 * Connection diagram for device with Pico W
 * Connection diagram for soil moisture sensors
 * 3D printed stand for PySpectrometer2
