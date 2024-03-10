@@ -3,7 +3,7 @@ from time import time, sleep
 
 # Settings
 IMAGES_COUNT = 10
-CAPTURE_DELAY_SEC = 15
+CAPTURE_DELAY_SEC = 30
 LIGHTS = ["r", "g", "b", "w", "i"]
 FILTERS = ["i", "v"]
 COMMAND = "sudo ~/cam/bin/python capture.py -l {lights} -f {filters}".format
