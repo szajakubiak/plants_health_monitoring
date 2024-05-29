@@ -13,10 +13,12 @@ parser.add_argument("-f", "--filters", help="filters to use", type=str, default=
 parser.add_argument(
     "-e", "--extension", help="output file extension", type=str, default="jpg"
 )
+parser.add_argument("-i", "--identifier", help="unique identifier or label", type=str, default=None)
 args = parser.parse_args()
 lig = args.lights
 fil = args.filters
 ext = args.extension
+ide = args.identifier
 
 
 def get_timestamp():
@@ -86,3 +88,9 @@ led_rgb.off()
 led_ir.off()
 fil_ir.on()
 fil_vis.off()
+
+
+# Save identifier is available
+if ide:
+    with open("identifiers.csv", "a") as label_file:
+        label_file.write(filename + "." + ext + "," + ide + "\n")
