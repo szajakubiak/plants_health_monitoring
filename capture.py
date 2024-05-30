@@ -13,7 +13,9 @@ parser.add_argument("-f", "--filters", help="filters to use", type=str, default=
 parser.add_argument(
     "-e", "--extension", help="output file extension", type=str, default="jpg"
 )
-parser.add_argument("-i", "--identifier", help="unique identifier or label", type=str, default=None)
+parser.add_argument(
+    "-i", "--identifier", help="unique identifier or label", type=str, default=None
+)
 args = parser.parse_args()
 lig = args.lights
 fil = args.filters
