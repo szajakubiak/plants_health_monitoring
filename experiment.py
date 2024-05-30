@@ -6,7 +6,8 @@ IMAGES_COUNT = 10
 CAPTURE_DELAY_SEC = 30
 LIGHTS = ["r", "g", "b", "w", "i"]
 FILTERS = ["i", "v"]
-COMMAND = "sudo ~/cam/bin/python capture.py -l {lights} -f {filters}".format
+IDENTIFIER = "test images"
+COMMAND = "sudo ~/cam/bin/python capture.py -l {lights} -f {filters} -i {identifier}".format
 DEBUG = True
 
 time_last = 0
@@ -17,7 +18,10 @@ for i in range(IMAGES_COUNT):
             print("Taking image", i + 1)
         for light in LIGHTS:
             for filter in FILTERS:
-                command = COMMAND(lights=light, filters=filter)
+                if IDENTIFIER:
+                    command = COMMAND(lights=light, filters=filter, identifier=IDENTIFIER)
+                else:
+                    command = COMMAND(lights=light, filters=filter)
                 if debug:
                     print("Command:", command)
                 os.system(command)
