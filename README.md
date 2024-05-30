@@ -143,4 +143,3 @@ Both cameras are equipped with lens mount with switchable IR filter. OV5647 modu
 * Add info about turn table for plants photography
 * Add sample data for testing
 * Add Jupyter Notebook for image analysis
-* Add option to save label when capturing image
