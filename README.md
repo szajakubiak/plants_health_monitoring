@@ -41,14 +41,7 @@ sudo apt install python3-pip python3-venv
 python -m venv cam --system-site-packages
 ```
 
-#### Support for controlling GPIOs
-``` bash
-~/cam/bin/pip install gpiozero pigpio 
-```
-
-#### Support for NeoPixels
-Install the following libraries:
-
+#### Install all requirements
 ``` bash
 ~/cam/bin/pip install -r requirements.txt
 ```
