@@ -50,7 +50,7 @@ python -m venv cam --system-site-packages
 Install the following libraries:
 
 ``` bash
-~/cam/bin/pip install rpi_ws281x adafruit-circuitpython-neopixel adafruit-blinka
+~/cam/bin/pip install -r requirements.txt
 ```
 
 Documentation for NeoPixel library is [here](https://docs.circuitpython.org/projects/neopixel/en/latest/).
