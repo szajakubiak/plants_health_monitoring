@@ -53,6 +53,11 @@ python -m venv cam --system-site-packages
 
 Documentation for NeoPixel library is [here](https://docs.circuitpython.org/projects/neopixel/en/latest/).
 
+#### Clone repository
+``` bash
+git clone https://github.com/szajakubiak/plants_health_monitoring.git
+```
+
 ### Additional settings
 By default IR LEDs are turned on when device is powered. There is a script to turn off all LEDs, which can be scheduled to run on boot using cron:
 
