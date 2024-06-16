@@ -41,20 +41,18 @@ sudo apt install python3-pip python3-venv
 python -m venv cam --system-site-packages
 ```
 
-#### Install all requirements
-``` bash
-~/cam/bin/pip install -r requirements.txt
-```
-
-Documentation for NeoPixel library is [here](https://docs.circuitpython.org/projects/neopixel/en/latest/).
-
 #### Clone repository
 ``` bash
 git clone https://github.com/szajakubiak/plants_health_monitoring.git
 ```
 
+#### Install all requirements
+``` bash
+~/cam/bin/pip install -r requirements.txt
+```
+
 ### Additional settings
-By default IR LEDs are turned on when device is powered. There is a script to turn off all LEDs, which can be scheduled to run on boot using cron:
+By default IR LEDs are turned on when device is powered. Documentation for NeoPixel library is [here](https://docs.circuitpython.org/projects/neopixel/en/latest/). There is a script to turn off all LEDs, which can be scheduled to run on boot using cron:
 
 ``` bash
 crontab -e
