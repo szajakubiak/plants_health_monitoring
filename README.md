@@ -35,11 +35,6 @@ IR LEDs:
 
 <sup>2</sup> marking visible after desoldering photoresistor
 
-#### Install pip:
-``` bash
-sudo apt install python3-pip
-```
-
 #### Create Python virtual environment
 ``` bash
 sudo apt install python3-pip python3-venv
