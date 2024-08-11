@@ -67,7 +67,7 @@ if "v" in fil:
 sleep(1)
 
 
-# Create the name of the output file
+# Generate the name of the output file
 timestamp = get_timestamp()
 filename = timestamp
 if len(lig) > 0:
@@ -84,7 +84,7 @@ sleep(1)
 picam2.switch_mode_and_capture_file(capture_config, filename + "." + ext)
 
 
-# Set camera to normal mode
+# Set camera to the normal mode
 sleep(1)
 led_rgb.off()
 led_ir.off()
@@ -92,7 +92,7 @@ fil_ir.on()
 fil_vis.off()
 
 
-# Save identifier is available
+# Save identifier if it was provided
 if ide:
     with open("identifiers.csv", "a") as label_file:
         label_file.write(filename + "." + ext + "," + ide + "\n")
